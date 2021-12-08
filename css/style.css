@@ -8,6 +8,7 @@
 
   --fs-600: 3rem;
   --fs-400: 1.8rem;
+  --fs-300: 1.6rem;
 }
 
 *,
@@ -32,6 +33,22 @@ h1 {
   font-size: var(--fs-600);
   font-weight: 600;
   color: var(--color-primary);
+}
+
+/* Card Data Section */
+.card-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-300);
+}
+
+.icon {
+  margin-right: 0.35rem;
+  vertical-align: bottom;
+}
+
+.accent-text {
+  color: var(--color-accent);
 }
 
 /* Attribution */
