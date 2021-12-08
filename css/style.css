@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #8bacda;
+  --color-accent: #00fff7;
+  --color-bg-main: #0d192b;
+  --color-bg-card: #14253d;
+  --color-line: #2f415b;
+
+  --fs-600: 3rem;
+  --fs-400: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", Helvetica, Arial, sans-serif;
+  font-size: var(--fs-400);
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-size: var(--fs-600);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
