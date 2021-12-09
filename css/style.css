@@ -6,7 +6,9 @@
   --color-bg-card: #14253d;
   --color-line: #2f415b;
 
-  --fs-600: 3rem;
+  --border-rad: 15px;
+
+  --fs-600: 2.5rem;
   --fs-400: 1.8rem;
   --fs-300: 1.6rem;
 }
@@ -26,7 +28,9 @@ html {
 body {
   font-family: "Outfit", Helvetica, Arial, sans-serif;
   font-size: var(--fs-400);
+  font-weight: 300;
   color: var(--color-secondary);
+  line-height: 1.5;
 }
 
 h1 {
@@ -45,11 +49,21 @@ h1 {
   color: var(--color-accent);
 }
 
+/* Main Card */
+.card {
+  background: var(--color-bg-card);
+  padding: 2em;
+}
+.card__img {
+  width: 100%;
+  border-radius: var(--border-rad);
+}
+
 /* Card Data Section */
 .card-data {
   display: flex;
   justify-content: space-between;
-  font-size: var(--fs-300);
+  padding: 1.5em 0;
 }
 
 .icon {
@@ -59,6 +73,10 @@ h1 {
 
 .accent-text {
   color: var(--color-accent);
+}
+
+.data__rate {
+  font-weight: 400;
 }
 
 /* Card Creator Section */
