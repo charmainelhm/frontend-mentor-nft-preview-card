@@ -30,13 +30,16 @@ body {
   font-size: var(--fs-400);
   font-weight: 300;
   color: var(--color-secondary);
-  line-height: 1.5;
 }
 
 h1 {
   font-size: var(--fs-600);
   font-weight: 600;
   color: var(--color-primary);
+}
+
+p {
+  line-height: 1.5;
 }
 
 .link {
@@ -54,9 +57,32 @@ h1 {
   background: var(--color-bg-card);
   padding: 2em;
 }
+
+.img-wrapper {
+  position: relative;
+  background: var(--color-accent);
+  border-radius: var(--border-rad);
+}
+
 .card__img {
   width: 100%;
   border-radius: var(--border-rad);
+  opacity: 1;
+  display: block;
+}
+
+.img-wrapper:hover .card__img {
+  opacity: 0.6;
+}
+
+.img-wrapper:hover::before {
+  content: url(../images/icon-view.svg);
+  position: absolute;
+  border-radius: var(--border-rad);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
 }
 
 /* Card Data Section */
