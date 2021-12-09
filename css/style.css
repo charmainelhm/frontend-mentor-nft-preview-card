@@ -10,6 +10,7 @@
 
   --fs-600: 2.2rem;
   --fs-400: 1.6rem;
+  --fs-300: 1.6rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -75,6 +76,10 @@ p {
   border-radius: var(--border-rad);
 }
 
+.card__title {
+  margin: 1em 0;
+}
+
 .img-wrapper {
   position: relative;
   background: var(--color-accent);
@@ -112,6 +117,7 @@ p {
 .icon {
   margin-right: 0.35rem;
   vertical-align: bottom;
+  padding-bottom: 3px;
 }
 
 .accent-text {
@@ -126,7 +132,7 @@ p {
 .card-creator {
   display: flex;
   align-items: center;
-  column-gap: 1.5em;
+  column-gap: 1em;
   border-top: 1px solid var(--color-line);
   padding-top: 1em;
 }
@@ -145,5 +151,15 @@ p {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 56%, 91%);
+}
+
+@media screen and (min-width: 400px) {
+  .card-data {
+    font-size: var(--fs-300);
+  }
+
+  .card-creator {
+    font-size: var(--fs-300);
+  }
 }
